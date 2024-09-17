@@ -2,9 +2,6 @@
 const GEMINI_API_KEY = "YOUR API KEY";
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}`;
 
-// Get the HTML element with the ID 'result_text', where results will be displayed
-let resultText = document.getElementById("result_text");
-
 // Get the current URL of the window and extract the query string
 const url = new URL(window.location.href);
 const search = url.search;  // Get the query part of the URL (e.g., ?q=something)
